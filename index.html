@@ -1,56 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockeys</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Hockeys </title>
-        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    
-        <!-- Daisy UI link -->
-    
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-    
-        <!-- 'Lato' font link from Google -->
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    
-        <!-- Font Awesome Link -->
-    
-        <script src="https://kit.fontawesome.com/b5bac8cb4a.js" crossorigin="anonymous"></script>
-    
-        <!-- Custom Color -->
-    
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            clifford: '#da373d',
-                            'bg-primary': '#F85559',
-                            'para-color': '#12121299',
-                        }
-                    }
-                }
-            }
-        </script>
-    
-        <!-- Vanilla CSS -->
-    
-        <style>
-            .font-lato {
-                font-family: 'Lato', sans-serif;
-            }
-        </style>
-    
-    </head>
+    <!-- Daisy UI link -->
 
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <h1 class="text-4xl"> Hi There </h1>
-    
-</body>
+    <!-- 'Lato' font link from Google -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Link -->
+
+    <script
+      src="https://kit.fontawesome.com/b5bac8cb4a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Color -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bg-primary": "#F85559",
+              "para-color": "#12121299",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Vanilla CSS -->
+
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body
+    class="container mx-auto flex flex-col justify-center items-center font-lato"
+  >
+    <header class="w-11/12">
+      <!-- Nav Bar  -->
+
+      <nav>
+        <!-- Navbar for Mobile -->
+
+        <div class="lg:hidden flex justify-between items-center">
+          <div class="navbar bg-base-100">
+            <div>
+              <div class="dropdown dropdown-bottom dropdown-right">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7"
+                    />
+                  </svg>
+                </label>
+
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a href="#"> Home </a></li>
+                  <li><a href="#"> About </a></li>
+                  <li><a href="#"> Pages </a></li>
+                  <li><a href="#"> Blog </a></li>
+                  <li><a href="#"> Contact </a></li>
+                  <li>
+                    <div class="form-control">
+                      <div class="relative">
+                        <input
+                          type="text"
+                          placeholder="Search here"
+                          class="w-44 rounded-3xl p-2.5 outline-none"
+                        />
+                        <a href="#">
+                          <i
+                            class="fa-solid fa-magnifying-glass absolute top-3.5 right-6"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <a class="text-2xl font-extrabold"
+                >Hockey<span class="text-bg-primary">'</span>s</a
+              >
+            </div>
+          </div>
+
+          <div>
+            <button class="btn btn-error w-28 text-white normal-case">
+              Get Ticket
+            </button>
+          </div>
+        </div>
+
+        <!-- Navbar for Large Device -->
+
+        <div class="hidden lg:block">
+          <div class="navbar pt-4 pb-4 pl-6 pr-6 justify-between items-center">
+            <div>
+              <a class="normal-case text-4xl font-extrabold ml-4"
+                >Hockey<span class="text-bg-primary">'</span>s</a
+              >
+            </div>
+
+            <div class="navbar-center">
+              <ul tabindex="0" class="flex gap-7 text-base font-bold">
+                <li class="text-bg-primary"><a href="#"> Home </a></li>
+                <li><a href="#"> About </a></li>
+                <li><a href="#"> Pages </a></li>
+                <li><a href="#"> Blog </a></li>
+                <li><a href="#"> Contact </a></li>
+              </ul>
+            </div>
+
+            <div class="form-control">
+              <div class="relative">
+                <input
+                  type="text"
+                  placeholder="Search here"
+                  class="w-80 rounded-3xl p-2.5 border-2 outline-none"
+                />
+
+                <a href="#">
+                  <i
+                    class="fa-solid fa-magnifying-glass absolute top-3.5 right-6"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <button
+              class="btn btn-error text-white text-xl font-bold normal-case"
+            >
+              Get Ticket
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
